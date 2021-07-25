@@ -1,0 +1,64 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: $light;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  a {
+    text-decoration: none;
+    //display: block;
+    transition: 0.3s;
+    //color: $light;
+
+    &:hover {
+      color: $primary;
+    }
+
+  }
+
+  .close-button {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+    margin-left: 50px;
+    color: $white;
+  }
+
+  .header {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    margin-left: 5px;
+    max-width: 200px;
+  }
+
+  hr {
+    border-top: 5px solid  ;
+    border-color: $secondary;
+  }
+
+
+}
+
+
+.open-button {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+  &:hover {
+    background-color: #444;
+  }
+
+}
+

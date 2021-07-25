@@ -1,0 +1,35 @@
+/* ========================
+HTML GENERATION
+=================== */
+
+.genhtml {
+
+  ul {
+    @extend .list-check;
+  }
+
+  table {
+    @extend .table;
+    @extend .table-bordered;
+  }
+
+  img {
+    @extend .img-fluid
+  }
+
+  embed,
+  object,
+  video  {
+    width: 100% !important;
+    height: auto !important;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  iframe  {
+    width: 100% !important;
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+}

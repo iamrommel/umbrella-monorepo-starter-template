@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  storefront:
+    build: .
+    ports:
+      - "8500:8500"
+    networks:
+      - dev-network
+    container_name: u-calculator-web
+    env_file:
+      - ./.tools/.env.production.local
+
+volumes:
+  data_db:
+  data_configdb:
+
+
+networks:
+  dev-network:
+

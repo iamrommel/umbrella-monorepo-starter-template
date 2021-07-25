@@ -1,0 +1,12 @@
+//This will just generate the css for genhtml only
+@import "variables-custom";
+
+@import "bootstrap-assets/functions";
+@import "bootstrap-assets/variables";
+@import "bootstrap-assets/mixins";
+
+@import "bootstrap-assets/tables";
+@import "bootstrap-assets/images";
+@import "bootstrap-assets/utilities/embed";
+@import "ui-assets/components/lists";
+@import "ui-assets/components/genhtml";

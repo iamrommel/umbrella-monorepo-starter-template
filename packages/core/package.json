@@ -1,0 +1,31 @@
+{
+  "name": "@u-calculator/core",
+  "version": "0.1.0",
+  "description": "core module",
+  "author": "Rommel Manalo <manalo.rommel@gmail.com>",
+  "homepage": "https://github.com/iamrommel/u-calculator#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamrommel/u-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamrommel/u-calculator/issues"
+  },
+  "scripts": {
+    "test": "mocha --require ../../mocha-register.js --timeout 10000 './src/**/*.spec.js' --exit",
+    "build": "npm run buildClean && cross-env NODE_ENV=production babel src --out-dir dist --source-maps --root-mode upward",
+    "lint": "prettier --write \"src/**/*.js\" && eslint src/**/*.js --fix",
+    "buildClean": "rimraf ./dist/*",
+    "buildWatch": "npm run buildClean && cross-env NODE_ENV=test babel src --out-dir dist --source-maps --watch --root-mode upward"
+  },
+  "dependencies": {
+  }
+}

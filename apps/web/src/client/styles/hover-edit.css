@@ -1,0 +1,27 @@
+.edit-content {
+  position: relative;
+  display: inline-flex;
+  /*padding-right: 50px;*/
+}
+
+.edit-content:hover .edit {
+  display: inline-block;
+  /*margin-left: 5px;*/
+}
+
+.edit {
+  display: none;
+}
+
+.edit a {
+  color: inherit;
+}
+
+.hover {
+  color: inherit;
+}
+
+.hover:hover {
+  color: #337ab7 !important;
+  cursor: pointer;
+}
